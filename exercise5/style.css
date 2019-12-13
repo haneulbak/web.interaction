@@ -1,0 +1,50 @@
+@font-face{
+    font-family:"LetterGothicStd";
+    src:url("fonts/LetterGothicStd-Slanted.woff")format("woff");
+    font-family:"BMKIRANGHAERANG";
+    src:url("fonts/BMKIRANGHAERANG-TTF.ttf")format("ttf");
+    font-family:"Rockwell";
+    src:url("fonts/Rockwell.ttc")format("ttc");
+}
+
+body{
+    background-color:black;
+}
+
+#clock{
+    color:whitesmoke;
+    text-align:center;
+    font-family:"Rockwell";
+    position: absolute;
+    margin:66.6px;
+    font-size:66.6px;
+}
+#tool{
+    position:fixed;
+    bottom:0;
+    left:0;
+    background-color:grey;
+    padding:5px;
+    margin:5px;
+    border-radius:30px;
+}
+#container{
+    text-align:center;
+    background-color:rgb(36, 34, 34);
+    border:100px;
+    padding:100px;
+    margin:100px;
+    border-radius:50px;
+    width:33vw;
+    height:18vw;
+
+}
+
+img{
+    width:33.3%;
+}
+
+.colorCheck{
+    color:red;
+}
+      

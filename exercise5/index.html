@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Name Logo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <center>
+
+    <body>      
+        <p id="clock">haneul bak</p>
+        <br><br><br><br><br><br><br><br><br>
+          <img src="pic.jpg"></img>
+
+      <div id="tool">
+
+      <select id="myFonts" onchange="fontFunction()">
+        <option value="Rockwell">Rockwell</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="courier, monospace">Courier</option>
+      </select>
+
+      <input type="checkbox"id="boldCheck"
+      onclick="boldFunction()">Bold
+      <input type="checkbox"id="italicCheck"
+      onclick="italicFunction()"><i>Italic</i>
+
+      <button onclick="myMove()">Motion1</button>
+      <button onclick="anotherMove()">Motion2</button>
+
+      <input type="range"id="size"
+      value="16"min="66.6"max="101.01"step="1"
+      oninput="sizeFunction()">
+  
+    </div>
+    </body>
+  </center>
+
+      <script src="js/jquery.js"></script>
+      <script src="js/scripts.js"></script>   
+</html>

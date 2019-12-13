@@ -1,0 +1,58 @@
+@font-face{
+    font-family:"LetterGothicStd";
+    src:url("fonts/LetterGothicStd-Slanted.woff")format("woff");
+}
+
+body, p, h1{
+    margin:0;
+    padding:0;
+}
+
+h1{
+    font-family: helvetica, sans-serif;
+    font-size:20vw;
+    letter-spacing: -1vw;
+}
+
+h2{
+    font-family:"LetterGothicStd";
+    text-align:center;
+    font-size:4.44vw;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+#container{
+    background-color: white;
+    text-align:center;
+    padding:50px;
+}
+
+.body-text{
+    color:black;
+    font-family:"LetterGothicStd";
+    font-size:20px;
+    max-width:1200px;
+    letter-spacing:.5px;
+    display:inline-block;
+    text-align:center;
+    line-height:2;
+    padding:100px;
+}
+
+img{
+    width:100%;
+}
+
+@media only screen and (max-width:800px){
+
+    h2{
+        padding-left:40px;
+    }
+
+    .body-text{
+        padding:40px;
+        font-size:18px;
+        letter-spacing:0px;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Exercise 4 Clock</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+
+      function setup(){
+        canvas(400,400);
+        angleMode(DEGREES);
+      }
+
+      function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+      }
+
+      function checkTime(i) {
+        if (i < 10) {i = "0" + i}; 
+        return i;
+      }
+
+      function draw(){
+        background(0);
+        translate(200,200);
+        rotate(-90);
+        strokeWeight(8);
+        var secondArc = map(s,0,60,0,360);
+        push();
+        strokeWeight(4);
+        rotate(secondArc);
+        stroke(255,20,100);
+        line(0,0,30,0);
+        pop();
+      }
+      
+      </script> 
+
+  </head>
+  
+  <body>
+    <div id="container">
+        <center>
+
+
+        <button onclick="startTime()">
+          <div class="button">
+            <style type="text/css"></style><g>
+            <text x="100" y="100">what time is it?
+            </text></g>
+          </div>
+        </button>
+
+        <br><br>
+        <div id="txt"></div>
+        </center>
+        </div>
+  
+  </body>
+    
+      <script src="js/jquery.js"></script>
+      <script src="js/scripts.js"></script>   
+</html>

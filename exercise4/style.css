@@ -1,0 +1,41 @@
+@import "compass/css3";
+
+@font-face {
+  font-family: "BMKIRANGHAERANG";  
+  src:  url("fonts/BMKIRANGHAERANG-TTF") format("TTF");
+}
+
+body{
+    background-color: black;
+    color:white;
+    margin:100px;
+    padding:100px;
+    font-family:"BMKIRANGHAERANG";
+    font-size:8.44vw;
+    letter-spacing: 2vw;
+}
+
+.button {
+    width:17vw;
+    height:3vw;
+    font-family: "BMKIRANGHAERANG";  
+    margin:0;
+    border:0;
+    color:black;
+    padding:0;
+    cursor: pointer;
+    font-size:2.7vw;
+    transition: .5s linear;
+  }
+  
+.button:hover{
+    background-color:lightblue;
+    color:white;
+  }  
+
+
+@keyframes animation-one{
+    0%{background-color: darkgoldenrod}
+    50%{background-color: green}
+    100%{background-color: darkgoldenrod}
+}
